@@ -1,0 +1,29 @@
+<html>
+<head><title>compressSourceToDestination</title></head>
+<body>
+compress
+	<form method="post" action="http://localhost:8080/compress">
+		<input name="sourcedir" type="input"/>
+		<input name="destdir" type="input"/>
+		<input name="maxsize" type="number"/>
+	
+		<input type="submit" />
+	</form>
+	
+decompress
+	<form method="post" action="http://localhost:8080/decompress">
+		<input name="sourcedir" type="input"/>
+		<input name="destdir" type="input"/>
+		<input type="submit" />
+	</form>
+
+decompress parallel
+	<form method="post" action="http://localhost:8080/decompress">
+		<input name="sourcedir" type="input"/>
+		<input name="destdir" type="input"/>
+		<input name="parallelCount" type="number"/>
+		
+		<input type="submit" />
+	</form>
+</body>
+</html>
