@@ -28,9 +28,7 @@ public class Decompressionutility {
 			}
 			File outputFile = new File(targetDirectory + targetFileName);
 			if (!outputFile.exists()) {
-				if (outputFile.createNewFile()) {
-					throw new RuntimeException("Couldn't create new file");
-				}
+				outputFile.createNewFile();
 			}
 
 			FileOutputStream fout = new FileOutputStream(outputFile, false);
